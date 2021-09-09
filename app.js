@@ -13,6 +13,6 @@ if (cluster.isMaster) {
     console.log("Worker Process ID: "+process.pid);
     http.createServer(function(req, res) {
         res.writeHead(200);
-        res.end('process ' + process.pid + ' says hello!');
+        res.end('Process assigned: ' + process.pid);
     }).listen(8000);
 }
